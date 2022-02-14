@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Bank</title>
+    <link rel="stylesheet" href="./output/tailwind.css">
+</head>
+<body>
+    <div class="text-center text-4xl bg-purple-500 p-5 font-semibold text-yellow-400">Bang Bang<span class="text-green-400"> Bank</span></div>
+    <div class="bank-user-work-area bg-emerald-400 flex justify-center text-white" id="banking-section">
+        <div class="deposit-section w-1/3 text-center p-16 relative bg-amber-500">
+            <div class="money-show-here text-4xl">Deposit: $<span id="deposit-money-value"> 00</span></div>
+            <div class="input-deposit-money absolute -bottom-1/4 text-gray-900 text-xl mr-4">
+                <input class="border-2 py-1 px-4 bg-red-100 border-slate-700 rounded-lg" type="text" name="d-money" id="deposit-amount-input-value">
+                <button class="p-2 rounded-md bg-sky-300 hover:bg-sky-400" id="enter-deposit">Enter Amount</button>
+            </div>
+        </div>
+        <div class="widraw-section-main w-1/3 text-center p-12 relative bg-red-400">
+                <div class="money-show-here text-4xl">Widraw: $ <span id="widraw-money-value">00</span></div>
+                <div class="input-widraw-money absolute -bottom-1/4 text-gray-900 text-xl mr-4">
+                    <input class="border-2 py-1 px-4 bg-red-100 border-slate-700 rounded-lg" type="text" name="d-money" id="widraw-amount-input-value">
+                    <button class="p-2 rounded-md bg-sky-300 hover:bg-sky-400" id="enter-widraw">Enter Amount</button>
+                </div>
+        </div>
+        <div class="total-money-section w-1/3 text-center p-12 bg-blue-600">
+            <div class="total-money-section">
+                <div class="money-show-here text-4xl">Current Balence: $<span id="total-current-money-value"> 00</span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Deposit code 
+
+        // widraw code 
+
+        //current money
+    </script>
+    <script src="js/tranjection.js"></script>
+</body>
+</html>
