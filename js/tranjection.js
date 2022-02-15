@@ -1,4 +1,5 @@
-// function for all work 
+// function for all work
+document.getElementById('deposit-amount-input-value').focus();
 const bankingFunction = function () {
     updateBalenceInInner = document.getElementById("total-current-money-value");
     currentBalence = parseFloat(updateBalenceInInner.innerText);
