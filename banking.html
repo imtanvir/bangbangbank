@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Bank</title>
+    <link rel="stylesheet" href="./output/tailwind.css">
+</head>
+<body class="bg-green-200">
+    <div class="text-center text-4xl bg-purple-500 p-5 font-semibold text-yellow-400">Bang Bang<span class="text-green-400"> Bank</span></div>
+    <div class="bank-user-work-area bg-emerald-400 flex justify-center text-white" id="banking-section">
+        <div class="deposit-section w-1/3 text-center p-16 relative bg-amber-500">
+            <div class="money-show-here text-4xl">Deposit: $<span class="font-semibold" id="deposit-money-value"> 00</span></div>
+            <div class="input-deposit-money absolute -bottom-1/4 text-green-500 text-xl mr-4">
+                <input class="outline outline-1 outline-green-500 border-2 py-1 px-4 bg-green-50 border-green-500 rounded-lg" type="text" name="d-money" id="deposit-amount-input-value">
+                <button class="text-white p-2 rounded-md bg-indigo-500 hover:bg-indigo-400" id="enter-deposit">Enter Amount</button>
+            </div>
+        </div>
+        <div class="widraw-section-main w-1/3 text-center p-12 relative bg-red-400">
+                <div class="money-show-here text-4xl">Widraw: $ <span class="font-semibold" id="widraw-money-value">00</span></div>
+                <div class="input-widraw-money absolute -bottom-1/4 text-green-500 text-xl mr-4">
+                    <input class="outline outline-1 outline-green-500 border-2 py-1 px-4 bg-green-50 border-green-500 rounded-lg" type="text" name="d-money" id="widraw-amount-input-value">
+                    <button class="text-white p-2 rounded-md bg-indigo-500 hover:bg-indigo-400" id="enter-widraw">Enter Amount</button>
+                </div>
+        </div>
+        <div class="total-money-section w-1/3 text-center p-12 bg-blue-600">
+            <div class="total-money-section">
+                <div class="money-show-here text-4xl">Current Balence: $<span class="font-semibold" id="total-current-money-value"> 00</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- Under working -->
+    <div class="under-working text-center relative max-h-96 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-44 mt-16">
+        <div class="update-text left-24 top-1/4 absolute text-white text-center text-3xl">
+            <h1 class="">This portion in under working</h1>
+            <h2>It will be upgrade very soon...</h2>
+        </div>
+    </div>
+    <script src="js/tranjection.js"></script>
+</body>
+</html>

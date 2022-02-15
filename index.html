@@ -4,39 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Bank</title>
+    <title>Login Account</title>
     <link rel="stylesheet" href="./output/tailwind.css">
 </head>
-<body>
+<body class="bg-gray-200">
     <div class="text-center text-4xl bg-purple-500 p-5 font-semibold text-yellow-400">Bang Bang<span class="text-green-400"> Bank</span></div>
-    <div class="bank-user-work-area bg-emerald-400 flex justify-center text-white" id="banking-section">
-        <div class="deposit-section w-1/3 text-center p-16 relative bg-amber-500">
-            <div class="money-show-here text-4xl">Deposit: $<span id="deposit-money-value"> 00</span></div>
-            <div class="input-deposit-money absolute -bottom-1/4 text-gray-900 text-xl mr-4">
-                <input class="border-2 py-1 px-4 bg-red-100 border-slate-700 rounded-lg" type="text" name="d-money" id="deposit-amount-input-value">
-                <button class="p-2 rounded-md bg-sky-300 hover:bg-sky-400" id="enter-deposit">Enter Amount</button>
+    <!-- login area  -->
+    <div class="container flex justify-center mt-28">
+    <div class="login_area px-14 py-16 flex flex-col bg-white">
+        <div class="login_input flex flex-row space-x-3">
+            <div class="user_name flex flex-col space-y-7 font-bold">
+                <label for="user-name" class="pt-1">User Name:</label>
+                <label for="user-password">Password:</label>
+            </div>
+            <div class="user_password flex flex-col space-y-4">
+                <input class="border-2 border-gray-300 rounded outline-green-400 caret-green-500 px-3 py-0.5 bg-sky-100" type="text" name="username" id="user-name">
+                <input class="border-2 border-gray-300 rounded outline-green-400 caret-green-500 px-3 py-0.5 bg-sky-100" type="password" name="password" id="user-password">
             </div>
         </div>
-        <div class="widraw-section-main w-1/3 text-center p-12 relative bg-red-400">
-                <div class="money-show-here text-4xl">Widraw: $ <span id="widraw-money-value">00</span></div>
-                <div class="input-widraw-money absolute -bottom-1/4 text-gray-900 text-xl mr-4">
-                    <input class="border-2 py-1 px-4 bg-red-100 border-slate-700 rounded-lg" type="text" name="d-money" id="widraw-amount-input-value">
-                    <button class="p-2 rounded-md bg-sky-300 hover:bg-sky-400" id="enter-widraw">Enter Amount</button>
-                </div>
-        </div>
-        <div class="total-money-section w-1/3 text-center p-12 bg-blue-600">
-            <div class="total-money-section">
-                <div class="money-show-here text-4xl">Current Balence: $<span id="total-current-money-value"> 00</span></div>
+        <div class="submit_button-area flex justify-center mt-5 text-center">
+            <div>
+                <button  class="inline-flex items-center px-4 py-2 font-semibold ring ring-indigo-300 hover:ring-indigo-400 text-lg shadow rounded-lg text-white bg-indigo-500 hover:bg-indigo-300" type="submit" id="loginBtn">
+                    <svg id="svgId" class="hidden motion-reduce:hidden animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>Login</button>
+                <p class="error-text mt-3 text-red-500 text-sm font-bold" id="error-text"></p>
+                
             </div>
         </div>
     </div>
-    <script>
-        // Deposit code 
-
-        // widraw code 
-
-        //current money
-    </script>
-    <script src="js/tranjection.js"></script>
+</div>
+<script src="js/login.js"></script>
 </body>
 </html>
