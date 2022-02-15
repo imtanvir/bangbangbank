@@ -3,7 +3,7 @@ function idFinder(idElement) {
     return fromId;
 }
 idFinder('loginBtn').addEventListener('click', function () {
-    const userName = 'javascript';
+    const userName = 'tanvir1';
     const passWord = '123@pass';
     const userNameInput = idFinder('user-name').value;
     const userPasswordInput = idFinder('user-password').value;
@@ -12,7 +12,7 @@ idFinder('loginBtn').addEventListener('click', function () {
         document.getElementById('svgId').setAttribute('class',"motion-reduce:hidden animate-spin -ml-1 mr-3 h-5 w-5 text-white");
         setTimeout(navigatePage, 2000);
         function navigatePage() {
-            window.location.href = './bank/';
+            window.location.href = 'banking.html';
         }
     } else {
         const userNameAttribute = idFinder('user-name');
